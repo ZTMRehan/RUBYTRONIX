@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+
+    <!-- required html meta tags -->
+    <meta charset="utf-8">
+    
+    <!-- meta tags for SEO.--> 
+    <!-- The description meta tag defines the description for a webpage. -->
+    <!-- The keywords meta tag defines keywords for search engines. -->
+    <meta name="description" content="Rubytronix IT Solutions|| Digital Marketing || SEO || AMC || SOFTWARE DEVELOPMENT || MOBILE APPLICATION  ">
+    <meta name="keywords" content="Rubytronix IT Solutions|| Digital Marketing || SEO || AMC || SOFTWARE DEVELOPMENT || MOBILE APPLICATION  HTML5, CSS3, jQuery, Bootstrap, Web Design, Web Development, Responsive website, Modern website">
+    
+    <meta http-equiv="X-UA-C-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- title -->
+    <title>
+        Rubytronix IT Solutions|| Digital Marketing || SEO || AMC || SOFTWARE DEVELOPMENT || MOBILE APPLICATION
+    </title>
+
+    <!-- Favicon, google fonts, fontawesome icons, bootstrap CSS, animate CSS, Magnific Popup core CSS file, Owl Carousel CSS file & Style CSS files linked to this html file -->
+
+    <!-- <link> tag defines the link between a document and an external resource. <rel> attribute defines the relationship between two documents-->
+    <!-- whatever we write in style.css will be applied to index.html file -->
+    <!-- We need to add google font before the style.css -->
+    <!-- Because Responsive.css will overwrite rules in style.css for certain media sizes, we will write it after style.css -->
+    <link rel="icon" href="img/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate/animate.css">
+    <link rel="stylesheet" href="css/magnific-popup/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="css/owl-carousel/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl-carousel/owl-carousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+
+</head>
+
+<!-- 
+Attributes added for scroll spy as per BS documentation
+We add the data offset attribute because the menu height causes the menu to be highlighted/be in the active state a little late 
+when we are already inside the corresponding part of the webpage.
+We see that the menu height is 65px and so we use data-offset attribute to compensate for it.
+Data-Offset value is the number of pixels to be offset when calculating the position of the scroll.
+-->
+
+<!-- <body data-spy="scroll" data-target=".vesco-top-navbar" data-offset="65"> Since we removed the .vesco-top-navbar -->
+
+<body data-spy="scroll" data-target=".navbar-fixed-top" data-offset="65">
+
+    <!----------------- Header ---------------------->
+    <!--  
+        The Header is used for an introductory content or a set of Navigation links.
+    -->
+    <header>
+
+        <!-- 
+        The <nav> tag is used to define a set of navigation links.
+        For Navigation: BS NavBar Component - class="navbar navbar-inverse navbar-default".
+        .navbar adds a white or blank navigation bar at the top of the webpage.
+        .navbar-inverse adds a black component in the navigation bar. 
+        .navbar-fixed-top fixes the navigation bar at the top even when scrolling down.
+        .navbar-header to represent logo inside this navbar.
+        .navbar-brand for the anchor element to include the logo.
+        .nav navbar-nav makes an ul a menu
+        <button .navbar-toggle collapsed ... > provides a collapsable navigation bar when viewed on small screens by controlling the menu id.
+        .collapse .navbar-collapse will allow the navigation bar to collapse.
+        .vesco-top-navbar is not a BS class and is a custom class to change the black background of top navbar & 
+        the toggle button provided by .navbar-inverse to a custom transparent one.
+        
+         -->
+        <!-- <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation"> -->
+
+        <!-- We remove the .vesco-top-navbar to prevent having the black navigation bar upon page load. -->
+        <!-- <nav class="navbar vesco-top-navbar navbar-fixed-top" role="navigation"> -->
+        <nav class="navbar navbar-fixed-top">
+
+            <!-- .container-fluid will take the full-width of the webpage -->
+            <div class="container-fluid">
+
+                <div class="vesco-nav-wrapper">
+
+                    <div class="navbar-header">
+
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#vesco-menu-wrapper">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+<!--
+                        <a class="navbar-brand" href="#home">
+                            <img src="img/logo.png" alt="logo">
+                        </a>
+-->
+
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="vesco-menu-wrapper">
+
+                        <ul class="nav navbar-nav">
+                            <li><a class="smooth-scroll" href="#home"> Home </a></li>
+                            <li><a class="smooth-scroll" href="#services"> Services </a></li>
+                            <li><a class="smooth-scroll" href="#about"> About </a></li>
+                            <li><a class="smooth-scroll" href="#stats"> Stats </a></li>
+                            <!-- <li><a class="smooth-scroll" href="#work"> Work </a></li> -->
+                            <!-- <li><a class="smooth-scroll" href="#team"> Team </a></li> -->
+                            <li><a class="smooth-scroll" href="#testimonials"> Testimonials </a></li>
+                            <!-- <li><a class="smooth-scroll" href="#pricing"> Pricing </a></li> -->
+                            <!-- <li><a class="smooth-scroll" href="#clients"> Clients </a></li> -->
+                            <li><a class="smooth-scroll" href="#contact"> Contact </a></li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!----------------- Home ---------------------->
+
+    <section id="home">
+
+        <div id="home-cover" class="bg-parallax animated fadeIn">
+            <!-- To insert background image & responsiveness -->
+
+            <div id="home-content-box">
+                <!-- To become "full page" table -->
+
+                <div id="home-content-box-inner" class="text-center">
+                    <!-- To become table cell with contents of heading and button to align in the center using BS predefined class text-center -->
+
+                    <div id="home-heading" class="animated zoomIn">
+                        <h3>Welcome To <br>RUBYTRONIX IT SOLUTIONS</h3>
+                    </div>
+                    <div id="home-button" class="animated zoomIn">
+                        <a class="btn btn-lg btn-general btn-white smooth-scroll" href="#services" role="button" title="View Our Work">View Our services</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!----------------- Services ---------------------->
+
+    <section id="services">
+        <div class="content-box">
+
+            <!-- Title/Headings within content box & added WOW JS animation classes and attributes -->
+
+            <div class="content-title wow animated fadeInDown " data-wow-duration="1s" data-wow-delay=".5s">
+
+                <!-- Doesn't need animated class because they are already there by default. -->
+
+                <h3> Services </h3>
+                <div class="content-title-underline">
+                </div>
+
+            </div>
+
+            <!-- BS Grid System within content box -->
+
+            <div class="container">
+                <!-- Added animation on scroll as in title -->
+                <div class="row">
+                    
+                    <!-- 
+                        By adding col-sm-6, we can display 2 service items per row, which is what we want.
+                    -->
+
+                    <!-- BS Grid Col Group 1 -->
+
+                    <div class="col-md-4 col-sm-6">
+
+                        <div class="service-items wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+
+                            <div class="service-item-icon">
+                                <i class="fa fa-paint-brush fa-3x"></i>
+                            </div>
+                            <div class="service-item-title">
+                                <h3> Web Design </h3>
+                            </div>
+                            <div class="service-item-description">
+                                <p> we help designing and building the interface and navigation of websites for businesses and clients </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- BS Grid Col Group 2 -->
+
+                    <div class="col-md-4 col-sm-6">
+
+                        <div class="service-items wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+
+                            <div class="service-item-icon">
+                                <i class="fa fa-laptop fa-3x"></i>
+                            </div>
+                            <div class="service-item-title">
+                                <h3> Web Development </h3>
+                            </div>
+                            <div class="service-item-description">
+                                <p>Development and maintenance of websites , we make the magic that works behind the scenes to make a website look great, work fast and perform well with a seamless user experience</p>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <!-- BS Grid Col Group 3 -->
+                    <div class="col-md-4 col-sm-6">
+
+                        <div class="service-items wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+
+                            <div class="service-item-icon">
+                                <i class="fa fa-mobile fa-3x"></i>
+                            </div>
+                            <div class="service-item-title">
+                                <h3> Mobile Apps </h3>
+                            </div>
+                            <div class="service-item-description">
+                                <p>The process of making software for smartphones and digital assistants, commonly for Android and iOS. The point of a mobile app is to seamlessly connect and interact with customers, making it a valuable tool for the modern business.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- BS Grid Col Group 4 -->
+
+                    <div class="col-md-4 col-sm-6">
+
+                        <div class="service-items wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+
+                            <div class="service-item-icon">
+                                <i class="fa fa-search fa-3x"></i>
+                            </div>
+                            <div class="service-item-title">
+                                <h3> SEO Optimization </h3>
+                            </div>
+                            <div class="service-item-description">
+                                <p>Search engine optimization (SEO) is the art and science of getting pages to rank higher in search engines such as Google, Bing, DuckDuckGo,Yahoo</p>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <!-- BS Grid Col Group 5 -->
+                    <div class="col-md-4 col-sm-6">
+
+                        <div class="service-items wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+
+                            <div class="service-item-icon">
+                               <i class="fa fa-cloud-download fa-3x"></i>
+                            </div>
+                            <div class="service-item-title">
+                                <h3> AI / ML </h3>
+                            </div>
+                            <div class="service-item-description">
+                                <p>AI leads to develop a system to mimic human to respond behave in a circumstances and ML involves in creating self learning algorithms.</p>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <!-- BS Grid Col Group 6 -->
+                    <div class="col-md-4 col-sm-6">
+
+                        <div class="service-items wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+
+                            <div class="service-item-icon">
+                                <i class="fa fa-life-ring fa-3x"></i>
+                            </div>
+                            <div class="service-item-title">
+                                <h3> AMC </h3>
+                            </div>
+                            <div class="service-item-description">
+                                <p>To ensure that your desktops, laptops, and other devices work well 24X7. Your business gets the privilege of complete maintenance as any hardware or software issues gets fixed smoothly and easily. </p>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <!-- End of row class -->
+                </div>
+                <!-- End of container -->
+            </div>
+            <!-- End of Content Box -->
+        </div>
+
+    </section>
+
+    <!----------------- About ---------------------->
+
+    <section id="about">
+
+        <!-- Right Side Diagonal BackGround Image with Parallax effect -->
+        <div id="about-BG-Diagonal" class="bg-parallax">
+
+        </div>
+
+        <!-- Left Side with container BG for Grid System -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div id="about-content-box">
+                        <div id="about-content-box-outer">
+                            <div id="about-content-box-inner">
+
+                                <!-- Actual About heading, description and button here -->
+                                <div class="content-title wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
+                                    <h3> About Rubytronix </h3>
+                                    <div class="content-title-underline"></div>
+                                </div>
+
+                                <div id="about-description" class="wow animated fadeInDown" data-wow-duration="1.25s" data-wow-delay=".5s">
+                                    <div class="about-item-description">
+                                    <p >At Rubtronix IT Solutions we provide Online services and Application Development for business , organisations and clients.
+                                        We focus on Web Designing , Web Development, Mobile Applications , SEO optimizations , AI/ML Research and Annual maintenance Contact  </p>
+                                </div>
+                                </div>
+
+                                <!-- <div id="about-button" class="wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+                                    <a class="btn btn-lg btn-general btn-green smooth-scroll" href="#work" role="button" title="View Work">Our Work</a>
+                                </div> -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--------------- Work ------------------------->
+  
+
+    <!--------------- Team ------------------------->
+   
+
+   
+
+    <!--------------- Pricing ------------------------->
+   
+
+    <!--------------- Stats ------------------------->
+    <section id="stats">
+
+        <!-- Background/Cover Image over the entire content box - This is similar approach to Home Section -->
+
+        <div id="stats-section-cover-image" class="bg-parallax">
+
+
+            <!-- Content box, Content Title and Content underline are generic -->
+
+            <div class="content-box">
+                <div class="content-title content-title-white wow animated fadeInDown " data-wow-duration="1s" data-wow-delay=".5s">
+                    <h3> We Never Stop Improving </h3>
+                    <div class="content-title-underline">
+                    </div>
+                </div>
+
+                <!-- BS Grid System -->
+
+                <div class="container">
+                    <div class="row text-center wow animated bounceInLeft" data-wow-duration="1s" data-wow-delay=".5s">
+
+                        <!--
+                        STATS COLUMN - I
+                    -->
+
+                        <div class="col-md-3 col-sm-6">
+
+                            <div class="stats-item-wrapper">
+
+                                <i class="fa fa-cloud-download fa-5x"></i>
+
+                                <h2><span class="counter">1590</span><span>+</span></h2>
+
+                                <p>Downloads</p>
+
+                            </div>
+
+                        </div>
+
+                        <!--
+                        STATS COLUMN - II
+                    -->
+
+                        <div class="col-md-3 col-sm-6">
+
+                            <div class="stats-item-wrapper">
+
+                                <i class="fa fa-star-o fa-5x"></i>
+
+                                <h2><span class="counter">100</span><span>+</span></h2>
+
+                                <p>Awards</p>
+
+                            </div>
+
+                        </div>
+
+                        <!--
+                        STATS COLUMN - III
+                    -->
+<!-- 
+                        <div class="col-md-3 col-sm-6">
+
+                            <div class="stats-item-wrapper">
+
+                                <i class="fa fa-heart-o fa-5x"></i>
+
+                                <h2><span class="counter">1199</span><span>+</span></h2>
+
+                                <p>Likes</p>
+
+                            </div>
+
+                        </div> -->
+
+                        <!--
+                        STATS COLUMN - IV
+                    -->
+
+                        <div class="col-md-3 col-sm-6">
+
+                            <div class="stats-item-wrapper">
+
+                                <i class="fa fa-check fa-5x"></i>
+
+                                <h2><span class="counter">2200</span><span>+</span></h2>
+
+                                <p>Recommended</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!--End of Content box-->
+            </div>
+            <!--End of Cover box-->
+        </div>
+
+
+    </section>
+
+
+ <!--------------- Testimonials ------------------------->
+ <section id="testimonials">
+
+    <!-- Background/Cover Image over the entire content box - This is similar approach to Home Section -->
+
+    <div id="testimonial-section-cover-image" class="bg-parallax">
+
+
+
+        <!-- Content box, Content Title and Content underline are generic -->
+
+        <div class="content-box">
+            <!-- content-title-white because we need a white title and black background for testimonials -->
+            <div class="content-title content-title-white wow animated fadeInDown " data-wow-duration="1s" data-wow-delay=".5s">
+                <h3> What Our Customers Say </h3>
+                <div class="content-title-underline">
+                </div>
+            </div>
+
+            <!-- BS Grid System -->
+
+            <div class="container">
+                <div class="row wow animated bounceInDown" data-wow-duration="1s" data-wow-delay=".5s">
+                    <div class="col-md-12">
+                        <div id="customer-testimonials-wrapper" class="text-center owl-carousel owl-theme">
+                            <!--
+                        .text-center: BS predefined class. Everything except the image will be center-aligned.
+                        .owl-theme class will make the carousel dots visible.
+                    -->
+                            <!-- Customer Testimonial - I -->
+
+                            <div class="testimonials">
+                                <!--
+                        .img-circle is a BootStrap Class that Shapes the image to a circle (not available in IE8)
+                        -->
+                                <img src="img/client/client-1.jpg" class="img-responsive img-circle" alt="testimonials">
+                                <blockquote class="text-center">
+                                    <p> we discussed mobile application development for our food delivery services and Rubytronix has completed our project and has supported us in our marketing strategy as well .I want Rubytronix to know that you will be our technological expert for many more years to come.
+                                    </p>
+                                </blockquote>
+                                <div class="testimonial-customer-info">
+                                    <p>
+                                        <strong> Daniel Watrous </strong>
+                                        
+                                        <!--
+                                <span> hooks a part of a text to something. In our case, it hooks position of the customer with his name
+                            -->
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Customer Testimonial - II -->
+
+                            <div class="testimonials">
+                                <!--
+                        .img-circle is a BootStrap Class that Shapes the image to a circle (not available in IE8)
+                        -->
+                                <img src="img/client/R2.jpg" class="img-responsive img-circle" alt="testimonials">
+                                <blockquote class="text-center">
+                                    <p> My website was not giving me effective ranking , I contacted Rubytronix to help me rank my website and help me in marketing , I can say they did their job pretty good
+                                    </p>
+                                </blockquote>
+                                <div class="testimonial-customer-info">
+                                    <p>
+                                        <strong>salador alphanso</strong>
+                                       
+                                        <!--
+                                <span> hooks a part of a text to something. In our case, it hooks position of the customer with his name
+                            -->
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Customer Testimonial - III -->
+
+                            <div class="testimonials">
+                                <!--
+                        .img-circle is a BootStrap Class that Shapes the image to a circle (not available in IE8)
+                        -->
+                                <img src="img/client/R3.jpg" class="img-responsive img-circle" alt="testimonials">
+                                <blockquote class="text-center">
+                                    <p>AMC done by RUBYTRONIX for our firm was outstanding , they have expertice and experience in amc which helped us to save our engineers productive hours . I thank Rubytronix for their excellent Services
+                                    </p>
+                                </blockquote>
+                                <div class="testimonial-customer-info">
+                                    <p>
+                                        <strong> Rubina Khan </strong>
+                                        
+                                        <!--
+                                <span> hooks a part of a text to something. In our case, it hooks position of the customer with his name
+                            -->
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End of Content box-->
+        </div>
+        <!--End of Cover box-->
+    </div>
+
+</section>
+
+
+    <!--------------- Clients ------------------------->
+   
+
+    <!--------------- Footer ------------------------->
+    <!-- 
+        A <footer> element defines a footer for a webpage. It should contain information like, 
+        Contact, Site-Map, Back-To-Top link and Copyrights information.
+    -->
+    <footer>
+
+        <!-- Footer Address & Contact Form -->
+        <div id="contact">
+
+            <!-- BS Grid System -->
+
+            <div class="container custompadding">
+
+                <div class="row">
+
+                
+                   
+
+                    <!-- Right side of Contact section -->
+                    <div class="col-md-6">
+                        <div id="contact-right-side-main-wrapper" class="wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+
+                            <h3> CONTACT US </h3>
+                            
+                            <p class="cp">We believe in <strong>Simple</strong>, <strong>Clean</strong> & <strong>Modern</strong> Design Standards with Responsive Approach.
+                               </p>
+
+                            <div id="contact-info">
+
+                                <!-- Address -->
+                                <address>
+
+                                    <strong>Address</strong><br />
+
+                                    <p class="cp">UTTAR KANNADA KARNATAKA</p>
+
+                                </address>
+
+                                <!-- Phone, Fax, Email -->
+                                <div id="phone-fax-email">
+                                    <p class="cp">
+                                        <strong>Phone:</strong><span> (91) 7795138534  </span><br />
+                                          <strong>Email:</strong><span> support@rubytronix.in </span><br />
+                                    </p>
+                                </div>
+
+                                <!-- Social Icons from TEAM section -->
+                                <ul class="social-list">
+
+                                    <li>
+                                        <a href="#" class="social-icon-footer icon-white">
+                                            <i class="fa fa-facebook">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="social-icon-footer icon-white">
+                                            <i class="fa fa-twitter">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="social-icon-footer icon-white">
+                                            <i class="fa fa-youtube-play">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="social-icon-footer icon-white">
+                                            <i class="fa fa-google-plus">
+                                            </i>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <!--End of Main Contact Wrapper-->
+        </div>
+
+        <!-- Footer Bottom Copyright & Navigation -->
+        <div id="footer-bottom">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <!-- Copyrights -->
+                    <div class="col-md-6">
+
+                        <div id="footer-copyrights">
+                            <p>Copyrights &copy; 2021 All Rights Reserved by RUBYTRONIX IT SOLUTIONS LLP.</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Footer Navigation Menu -->
+                    <!-- BS3 hidden-sm class hides the footer menu for small screen sizes. -->
+                    <div class="col-md-6 hidden-sm hidden-xs">
+                        <div id="footer-menu">
+
+                            <ul>
+                                <li><a class="smooth-scroll" href="#home"> Home </a> / </li>
+                                <li><a class="smooth-scroll" href="#services"> Services </a> / </li>
+                                <li><a class="smooth-scroll" href="#about"> About </a> / </li>
+                                <!-- <li><a class="smooth-scroll" href="#work"> Work </a> / </li> -->
+                                <!-- <li><a class="smooth-scroll" href="#team"> Team </a> / </li> -->
+                                <li><a class="smooth-scroll" href="#testimonials"> Testimonials </a> / </li>
+                                <!-- <li><a class="smooth-scroll" href="#pricing"> Pricing </a> / </li> -->
+                                <li><a class="smooth-scroll" href="#stats"> Stats </a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back To Top Button -->
+        
+        <!-- .btn and .btn-sm are BS predefined button classes -->
+        <a href="#home" id="back-to-top" class="btn btn-sm btn-green button-back-to-top smooth-scroll hidden-sm hidden-xs" title="home" role="button">
+            <i class="fa fa-angle-up"></i>
+        </a>
+
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <!-- Temporary breaks 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    -->
+
+
+
+
+
+
+    <!--------------- JQuery Libraries ------------------------->
+    <!-- JQuery, Bootstrap JS, WOW JS (for animate upon scroll), Magnific Popup core JS, Owl Carousel JS, Counter JS, JQuery Easing & custom JS -->
+
+
+        <!-- JQuery library script is appended/added first because we need bootstrap JS, WOW JS & custom.js file requires JQuery library.
+        custom JS Could be added in head section but devs prefer here just before  because we want the browser to render all the contents of the webpage and then load our JS file.
+        script tag is used to define the clientside JS  -->
+  
+
+    <script src="js/jquery.js"></script>
+
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.2.2/web-animations.min.js"></script>
+
+    <!-- activation code by wow.js for animation upon page scrolling-->
+    <script>
+        new WOW().init();
+    </script>
+
+    <script src="js/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+
+    <script src="js/owl-carousel/owl.carousel.min.js"></script>
+
+    <script src="js/counter/jquery.waypoints.min.js"></script>
+    <script src="js/counter/jquery.counterup.min.js"></script>
+
+    <script src="js/easing/jquery.easing.1.3.js"></script>
+
+    <script src="js/custom.js"></script>
+</body>
+
+
+</html>
